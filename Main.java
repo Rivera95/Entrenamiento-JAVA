@@ -52,6 +52,63 @@ public class Main {
         emails.put("Juan", Arrays.asList("juan@gmail.com"));
         emails.put("Rivera", Arrays.asList("rivera@gmail.com"));
         System.out.println(emails.get("Rivera")); // Imprime "[rivera@gmail.com]"
+
+
+
+
+        //CONSTANTES
+        final double PI = 3.1416;
+        System.out.println(PI); // Imprime 3.1416
+
+
+
+        //OPERADORES
+        System.out.println(1 + 1); // Imprime 2
+        System.out.println(1 - 1); // Imprime 0
+        System.out.println(2 * 3); // Imprime 6
+        System.out.println(10 / 2); // Imprime 5
+
+        System.out.println(10 == 10); // Imprime true
+        System.out.println(10 != 10); // Imprime false
+        System.out.println(10 > 5); // Imprime true
+        System.out.println(10 < 5); // Imprime false
+
+        System.err.println(true && true); // Imprime true
+        System.err.println(true && false); // Imprime false
+        System.err.println(true || false); // Imprime true
+
+
+
+
+        // CONDICIONALES
+        boolean autorizado1 = false;
+
+        if (autorizado1) {
+            System.out.println("Acceso permitido");
+        } else {
+            System.out.println("Acceso denegado");
+        }
+
+
+
+        int entero = 100;
+
+        if (entero > 50) {
+            System.out.println("El número es mayor que 50");
+        } else if (entero == 50) {
+            System.out.println("El número es igual a 50");
+        } else {
+            System.out.println("El número es menor que 50");
+        }
+
+
+        String color = "amarillo";
+
+        switch (color) {
+            case "verder" -> System.err.println("Exito");
+            case "amarillo" -> System.err.println("Precaución");
+            default -> System.err.println("Error: Color no válido");
+        }
     }
 }
 
